@@ -6,9 +6,11 @@
 //
 
 #include <iostream>
+#include "Vecteur.hpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    vecteur3d v3(5, 6, 8);
+    
     return 0;
 }
