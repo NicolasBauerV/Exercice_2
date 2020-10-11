@@ -86,3 +86,22 @@ vecteur3d vecteur3d::norMaxRef(vecteur3d &vec) {
         else
             return vec;
 }
+
+vecteur3d vecteur3d::sommeRef(vecteur3d &vec) {
+    vecteur3d resSomme(0, 0, 0);
+    
+    resSomme.m_x = this->m_x + vec.m_x;
+    resSomme.m_y = this->m_y + vec.m_y;
+    resSomme.m_z = this->m_z + vec.m_z;
+    
+    return resSomme;
+}
+
+vecteur3d vecteur3d::produitScalRef(vecteur3d &vec) {
+    vecteur3d resScal = (this->m_x * vec.m_x) + (this->m_y * vec.m_y) + (this->m_z * vec.m_z);
+    return resScal;
+}
+
+void vecteur3d::affichageComp(vecteur3d &vec) {
+    std::cout << "Valeur des composants " << '<' << vec.m_x << '>' << '<' << vec.m_y << '>' << '<' << vec.m_z << '>' << std::endl;
+}

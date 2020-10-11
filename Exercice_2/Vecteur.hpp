@@ -27,13 +27,20 @@ public:
     
     //Methodes Membre
     
+    //Exercice 70
     bool coincideVal(vecteur3d vec);
     bool coincideAddr(vecteur3d *vec);
     bool coincideRef(vecteur3d &vec);
     
+    //Exercice 71
     vecteur3d norMaxVal(vecteur3d vec);
     vecteur3d norMaxAddr(vecteur3d *vec);
     vecteur3d norMaxRef(vecteur3d &vec);
+    
+    //Exercice 72
+    vecteur3d sommeRef(vecteur3d &vec);
+    vecteur3d produitScalRef(vecteur3d &vec);
+    void affichageComp(vecteur3d &vec);
     
     
 };

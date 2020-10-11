@@ -14,7 +14,7 @@ int main(int argc, const char * argv[]) {
     vecteur3d vec1(5, 6, 8);
     vecteur3d vec2(5, 6, 8);
     
-//    Exercice 70
+//    Exercice 70 -------------------------------------------------------------
     
 //    Test en envoyant la variable simple vec2
     if (vec1.vecteur3d::coincideVal(vec2)) {
@@ -37,15 +37,25 @@ int main(int argc, const char * argv[]) {
         cout << "les points ne sont pas égaux" << endl;
     }
     
-//    Exercice 71
-    vecteur3d v1 = vec1.norMaxVal(vec2); //Définition du vecteur ayant les plus grandes norme entre vec1 et vec2
+//    Exercice 71 -------------------------------------------------------------
+    
+//    Définition du vecteur ayant les plus grandes norme entre vec1 et vec2
+    vecteur3d v1 = vec1.norMaxVal(vec2);
     
     vecteur3d v2 = vec1.norMaxAddr(&vec2);
     
     vecteur3d v3 = vec1.norMaxRef(vec2);
     
-//    Exercice 72
+//    Exercice 72 -------------------------------------------------------------
     
+//    Définition des vecteurs, somme + produit scalaire.
+    vecteur3d v4 = vec1.sommeRef(vec1);
+    vecteur3d v5 = vec2.produitScalRef(vec2);
+//    Affichage des valeurs
+    v4.affichageComp(v4);
+    v5.affichageComp(v5);
+    
+//    Exercice 73 -------------------------------------------------------------
 
     return 0;
 }
