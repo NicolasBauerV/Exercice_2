@@ -49,3 +49,40 @@ bool vecteur3d::coincideRef(vecteur3d &vec) {
     
     return false;
 }
+
+
+vecteur3d vecteur3d::norMaxVal(vecteur3d vec) {
+//    Déclaration des normes
+    float res1 = (this->m_x * this->m_x) + (this->m_y * this->m_y) + (this->m_z * this->m_z);
+    float res2 = (vec.m_x * vec.m_x) + (vec.m_y * vec.m_y) + (vec.m_z * vec.m_z);
+    
+//    Comparer les deux normes
+    if (res1 > res2)
+        return *this;
+    else
+        return vec;
+}
+
+vecteur3d vecteur3d::norMaxAddr(vecteur3d *vec) {
+    //    Déclaration des normes
+        float res1 = (this->m_x * this->m_x) + (this->m_y * this->m_y) + (this->m_z * this->m_z);
+        float res2 = (vec->m_x * vec->m_x) + (vec->m_y * vec->m_y) + (vec->m_z * vec->m_z);
+        
+    //    Comparer les deux normes
+        if (res1 > res2)
+            return *this;
+        else
+            return *vec;
+}
+
+vecteur3d vecteur3d::norMaxRef(vecteur3d &vec) {
+    //    Déclaration des normes
+        float res1 = (this->m_x * this->m_x) + (this->m_y * this->m_y) + (this->m_z * this->m_z);
+        float res2 = (vec.m_x * vec.m_x) + (vec.m_y * vec.m_y) + (vec.m_z * vec.m_z);
+        
+    //    Comparer les deux normes
+        if (res1 > res2)
+            return *this;
+        else
+            return vec;
+}

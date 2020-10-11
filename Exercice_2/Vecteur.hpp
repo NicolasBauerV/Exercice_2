@@ -31,6 +31,10 @@ public:
     bool coincideAddr(vecteur3d *vec);
     bool coincideRef(vecteur3d &vec);
     
+    vecteur3d norMaxVal(vecteur3d vec);
+    vecteur3d norMaxAddr(vecteur3d *vec);
+    vecteur3d norMaxRef(vecteur3d &vec);
+    
     
 };
 
