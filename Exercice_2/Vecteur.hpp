@@ -45,4 +45,14 @@ public:
     
 };
 
+//--------------------------------------------------------------------------------------
+
+/* Exercice 73
+
+class point {
+    Ajouter une fonction static int compteur(), puis retourner ça valeur: return cpt;
+};
+ 
+*/
+
 #endif /* Vecteur_hpp */

@@ -51,11 +51,10 @@ int main(int argc, const char * argv[]) {
 //    Définition des vecteurs, somme + produit scalaire.
     vecteur3d v4 = vec1.sommeRef(vec1);
     vecteur3d v5 = vec2.produitScalRef(vec2);
+    
 //    Affichage des valeurs
     v4.affichageComp(v4);
     v5.affichageComp(v5);
     
-//    Exercice 73 -------------------------------------------------------------
-
     return 0;
 }
